@@ -1,0 +1,9 @@
+pipelines:
+  branches:
+    # Define the branch name to run the pipeline on
+    master:
+      - step:
+          name: Build and Test
+          image: ubuntu:latest
+          script:
+            - echo "hello world"
